@@ -1,0 +1,14 @@
+[
+  {
+    "city": "New York",
+    "temperature": 22
+  },
+  {
+    "city": "Los Angeles",
+    "temperature": 28
+  },
+  {
+    "city": "Chicago",
+    "temperature": 10
+  }
+]
