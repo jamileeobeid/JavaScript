@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to Table</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="ui container" style="margin-top: 50px;">
+    <h2 class="ui header">Weather Information</h2>
+    <table class="ui celled table" id="myTable">
+        <thead>
+        <tr>
+            <th>City</th>
+            <th>Temperature (°C)</th>
+            <th>Temperature (°F)</th>
+        </tr>
+        </thead>
+        <tbody id="weather-list">
+        <!-- Weather data will be inserted here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="table_script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</body>
+</html>
