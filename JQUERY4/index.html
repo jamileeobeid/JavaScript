@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+
+    <!-- Include Semantic UI CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-container {
+            margin-top: 50px;
+            width: 70%;
+            text-align: center;
+        }
+
+        .ui.segment {
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .ui.table {
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .ui.table th {
+            background-color: #2185d0 !important;
+            color: white !important;
+            text-align: center;
+        }
+
+        .ui.table td {
+            text-align: center;
+        }
+
+        /* Footer styling - Light gray background, matches table width */
+        .footer-container {
+            width: 70%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .custom-footer {
+            padding: 15px;
+            background-color: #f1f1f1 !important; /* Force light gray */
+            color: #333 !important; /* Force dark text */
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .loader-container {
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .main-container, .footer-container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="ui raised segment">
+        <h2 class="ui center aligned header">
+            <i class="graduation cap icon"></i> Student Grades
+        </h2>
+        <p class="ui center aligned description">Track student performance across different subjects</p>
+
+        <!-- Loading Indicator -->
+        <div class="loader-container">
+            <div class="ui active inline loader"></div>
+            <p>Loading student data...</p>
+        </div>
+
+        <!-- Table for displaying student data -->
+        <table class="ui celled striped table" id="student_grades">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Database</th>
+                <th>Networking</th>
+                <th>Programming</th>
+                <th>Average</th>
+                <th>Status</th>
+            </tr>
+            </thead>
+            <tbody id="student-table-body">
+            <!-- Data rows will be populated here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Footer aligned with the table -->
+<div class="footer-container">
+    <footer class="custom-footer">
+        <p>&copy; 2025 Student Grades | All rights reserved</p>
+        <p><i class="user icon"></i> <strong>Student 1: </strong>Jamile Obeid - 762004935</p>
+        <p><i class="user icon"></i> <strong>Student 2: </strong>Malak Alqaryouti - 759007889</p>
+    </footer>
+</div>
+
+<script src="script_starter.js"></script>
+</body>
+</html>
