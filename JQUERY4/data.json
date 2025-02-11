@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Ahmed",
+      "email": "ahmed@rit.edu",
+      "database": 90,
+      "networking": 80,
+      "programming": 70
+    },
+    {
+      "name": "Asmaa",
+      "email": "asmaa@rit.edu",
+      "database": 50,
+      "networking": 50,
+      "programming": 50
+    },
+    {
+      "name": "John",
+      "email": "john@rit.edu",
+      "database": 85,
+      "networking": 75,
+      "programming": 95
+    },
+    {
+      "name": "Sara",
+      "email": "sara@rit.edu",
+      "database": 88,
+      "networking": 72,
+      "programming": 78
+    },
+    {
+      "name": "Ali",
+      "email": "ali@rit.edu",
+      "database": 50,
+      "networking": 65,
+      "programming": 50
+    }
+
+]
